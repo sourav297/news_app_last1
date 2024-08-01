@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background-color: azure;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  text-align: center;
+  padding: 50px;
+}
+header{
+  background-color: aqua;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+footer{
+  background-color: blue;
+  color: white;
+  width: auto;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20vh;
+}
+footer p,
+footer Link{
+  margin-top: 1.5vh;
+}
+.headerLogo{
+  margin-top: 1.5vh;
+  margin-left: 4vh;
+}
+.headerList{
+  display: flex;
+  gap: 25px;
+  margin-right: 21vh;
+  margin-top: 1.7vh;
+}
+.newsContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 15px, 15px;
+  justify-content: center;
+}
+.card{
+  width: 400px;
+  height: 350px;
+  border: 1px solid black;
+  padding: 15px;
+  margin-top: 4vh;
+}
+.card img{
+  width: 100%;
+  object-fit: cover;
+  height: 197px;
+
+}
+.errorMsg{
+  text-align: center;
+}
+.searchBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2vh;
+  margin-top: 3vh;
+}
+.searchBox input{
+  width: 50vh;
+  height: 7vh;
+  border: 2px solid darkblue;
+  border-radius: 3px;
+}
+.searchBox h3{
+  color: forestgreen;
+}
+.searchBox button{
+  width: 15vh;
+}
+.tableContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4vh;
+}
+.container h1{
+  margin-top: 2vh;
+  color: deeppink;
+}
+.card h3{
+  padding-top: 7px;
+}
+.teamContainer{
+  margin-top: 13vh;
+}
+.teamContainer h1{
+  margin-left: 80vh;
+}
