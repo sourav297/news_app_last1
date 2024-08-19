@@ -22,15 +22,12 @@ const SearchedNews = () => {
       setErrorMsg("Please enter somthing...");
     } else {
       setErrorMsg("");
-      const apiKey = "364993d049084ce98c88c51585b1464e";
+      //const apiKey = "364993d049084ce98c88c51585b1464e";
       //Api call
+      const url="https://corsproxy.io/?https://newsapi.org/v2/everything?q=" + userInput + "&apiKey=364993d049084ce98c88c51585b1464e";
+      const apiURL='https://corsproxy.io/?' + encodeURIComponent(url);
       axios
-        .get(
-          "https://newsapi.org/v2/everything?q=" +
-            userInput +
-            "&apiKey=" +
-            apiKey
-        )
+        .get(apiURL)
         .then((response) => {
           console.log(response.data.articles);
           setErrorMsg("");
